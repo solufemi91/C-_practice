@@ -71,17 +71,30 @@ public class Program
 			String FinalAnswer = "The answer is  " + sum;
 			Console.WriteLine(FinalAnswer);
 		}
-	  	//elsif operation == "-"
-			//sum = first_number - second_number
-			//puts "The answer is #{sum}"
-	  	//elsif operation == "/"
-			//sum = first_number/second_number
-			//puts "The answer is #{sum}"
-	 	//elsif operation == "*"
-			//sum = first_number * second_number
-			//puts "The answer is #{sum}"
-	  	//end
+	  	else if (operation == "-")
+		{
 
+			float sum = first_number - second_number;
+			Convert.ToString(sum);
+			String FinalAnswer = "The answer is  " + sum;
+			Console.WriteLine(FinalAnswer);
+		}
+
+		else if (operation == "/")
+		{
+			float sum = first_number/second_number;
+			Convert.ToString(sum);
+			String FinalAnswer = "The answer is  " + sum;
+			Console.WriteLine(FinalAnswer);
+		}
+
+	 	else if (operation == "*")
+		{
+			float sum = first_number * second_number;
+			Convert.ToString(sum);
+			String FinalAnswer = "The answer is  " + sum;
+			Console.WriteLine(FinalAnswer);
+		}
 
 
 	}
