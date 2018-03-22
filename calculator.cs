@@ -12,9 +12,26 @@ public class Program
 		{
 			advanced();
 		}
+		else if (operation == "basic")
+		{
+			basic();
+		}
 
 	}
-	
+
+
+	public static void basic()
+	{
+	  Console.WriteLine("You have chose the basic calculator");
+	  Console.WriteLine("Please enter the first number");
+	  float first_number = Convert.ToInt32(Console.ReadLine());
+	  Console.WriteLine("Please enter the second number");
+	  float second_number = Convert.ToInt32(Console.ReadLine());
+	  Console.WriteLine("Please choose one of the following operations: *, /, +, -");
+	  String operation = Console.ReadLine();
+	  //operationFunction(first_number,second_number, operation)
+	}
+
 
 	public static void advanced()
 	{
@@ -29,14 +46,16 @@ public class Program
 			float answer = (float)Math.Sqrt(number);
 			Console.WriteLine(answer);
 		}
-		else if (operation == "Power")
+		else if (operation == "Power") 
 		{
 			Console.WriteLine("Enter the base number");
 			float Base = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Enter the exponent");
 			float exponent = Convert.ToInt32(Console.ReadLine());
 			double answer = Math.Pow(Base,exponent);
-			Console.WriteLine(answer);
+			Convert.ToString(answer);
+			String FinalAnswer = "The answer is " + answer;
+			Console.WriteLine(FinalAnswer);
 		}
 
 	}
