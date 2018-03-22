@@ -29,7 +29,7 @@ public class Program
 	  float second_number = Convert.ToInt32(Console.ReadLine());
 	  Console.WriteLine("Please choose one of the following operations: *, /, +, -");
 	  String operation = Console.ReadLine();
-	  //operationFunction(first_number,second_number, operation)
+	  operationFunction(first_number,second_number, operation);
 	}
 
 
@@ -46,7 +46,7 @@ public class Program
 			float answer = (float)Math.Sqrt(number);
 			Console.WriteLine(answer);
 		}
-		else if (operation == "Power") 
+		else if (operation == "Power")
 		{
 			Console.WriteLine("Enter the base number");
 			float Base = Convert.ToInt32(Console.ReadLine());
@@ -57,6 +57,32 @@ public class Program
 			String FinalAnswer = "The answer is " + answer;
 			Console.WriteLine(FinalAnswer);
 		}
+
+	}
+
+
+	public static void operationFunction(float first_number, float second_number, string operation)
+	{
+
+		if (operation == "+")
+		{
+			float sum = first_number + second_number;
+			Convert.ToString(sum);
+			String FinalAnswer = "The answer is  " + sum;
+			Console.WriteLine(FinalAnswer);
+		}
+	  	//elsif operation == "-"
+			//sum = first_number - second_number
+			//puts "The answer is #{sum}"
+	  	//elsif operation == "/"
+			//sum = first_number/second_number
+			//puts "The answer is #{sum}"
+	 	//elsif operation == "*"
+			//sum = first_number * second_number
+			//puts "The answer is #{sum}"
+	  	//end
+
+
 
 	}
 
