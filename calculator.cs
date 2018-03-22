@@ -58,6 +58,19 @@ public class Program
 			Console.WriteLine(FinalAnswer);
 		}
 
+		Reset();
+
+	}
+
+
+	public static void Reset()
+	{
+		Console.WriteLine("Do you want to make another calculation? Yes/No");
+		String decision = Console.ReadLine();
+		if (decision == "Yes")
+		{
+			Main();
+		}
 	}
 
 
@@ -95,6 +108,8 @@ public class Program
 			String FinalAnswer = "The answer is  " + sum;
 			Console.WriteLine(FinalAnswer);
 		}
+
+		Reset();
 
 
 	}
