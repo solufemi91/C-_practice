@@ -61,6 +61,17 @@ public class Program
 	}
 
 
+	public static void Reset()
+	{
+		Console.WriteLine("Do you want to make another calculation? Yes/No");
+		String desicion = Console.ReadLine();
+		if (decision == "Yes")
+		{
+			Main();
+		}
+	}
+
+
 	public static void operationFunction(float first_number, float second_number, string operation)
 	{
 
